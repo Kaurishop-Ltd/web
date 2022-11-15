@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <title>Kaurishop</title>
+
     <meta name="title" content="Kaurishop">
     <meta name="description" content="Přečtěte si o Kauri kryptoměně a rozhodně si ji nekupujte.">
     <meta property="og:type" content="website">
@@ -20,32 +16,71 @@
     <meta property="twitter:description" content="Přečtěte si o Kauri kryptoměně a rozhodně si ji nekupujte.">
     <meta property="theme-color" content="#090380">
     <meta name="theme-color" content="#090380">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+
+    <title>It's a scam! | KauriShop</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="container">
+    <h1 class="animated fadeIn">Čmoula má Varlata na Bradě!</h1>
+    <div class="row">
+        <div class="col-8">
+            <iframe
+                    src="https://www.youtube.com/embed/Hlnr-DuHpgI"
+                    title="YouTube video player"
+                    style="width: 100%; aspect-ratio: 16 / 9; "
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+            ></iframe>
+        </div>
+        <div class="col-4">
+            <div style="padding-bottom: 45px; text-align: center;">
+                <div class="btn btn-success" id="jumpButton">Koupit Kauri</div>
+            </div>
 
-    <div class="text">
-        <span>Jiří Vokáč Čmolík je samozvaný transformační řečník, prezentující se pochybnými a kontroverzními způsoby. Cílí zejména na lidi, které jsou v nepříjemné finanční situaci.</span>
-        <span>Mimo jiné se chlubí tím, že založil kryptoměnu Kauri, která se údajně liší tím, že její vlastnictví umožňuje vlastníkovi využívat benefity ve skutečném životě, jako návštěva jeho nemovitostí nebo speciální jachta. Kromě toho, že jeho cílová skupina nemá snad ani tušení, co je to kryptoměna, benefity ve skutečném životě nejsou nijak unikátním nápadem. Třeba známý projekt Bored Apes Yacht Club také nabízí vstup na jachtu za vlastnictví.</span>
-        <span>Česká národní banka upozornila na podnikatelské aktivity Čmolíka, protože vykazují znaky neoprávněného shromažďování peněžních prostředků od veřejnosti za účelem jejich společného investování.</span>
-        <span>Ačkoliv jeho business je obdivuhodný a má velký dosah, většina lidí by ho dnes nejspíše nazvala podvodníkem.</span>
+            <div>
+                Jiří Vokáč Čmolík je samozvaný transformační řečník,
+                prezentující se pochybnými a kontroverzními způsoby.
+                Cílí zejména na lidi, které jsou v nepříjemné finanční situaci.
+            </div>
+
+            <div class="mt-4">
+                Mimo jiné se chlubí tím, že založil kryptoměnu Kauri, která se údajně liší tím,
+                že její vlastnictví umožňuje vlastníkovi využívat benefity ve skutečném životě,
+                jako návštěva jeho nemovitostí nebo speciální jachta. Kromě toho,
+                že jeho cílová skupina nemá snad ani tušení, co je to kryptoměna,
+                benefity ve skutečném životě nejsou nijak unikátním nápadem.
+
+                Třeba známý projekt Bored Apes Yacht Club také nabízí vstup na jachtu za vlastnictví.
+            </div>
+
+            <div class="mt-4">
+                Česká národní banka upozornila na podnikatelské aktivity Čmolíka,
+                protože vykazují znaky neoprávněného shromažďování peněžních prostředků od
+                veřejnosti za účelem jejich společného investování.
+            </div>
+
+            <div class="mt-4">
+                Ačkoliv jeho business je obdivuhodný a má velký dosah, většina lidí by ho dnes nejspíše nazvala
+                podvodníkem.
+            </div>
+
+        </div>
     </div>
-    <button onmouseover="this.style.position = 'fixed'; this.style.left = Math.floor(Math.random() * (screen.width - document.querySelector('button').offsetWidth) + 1) + 'px'; this.style.top = Math.floor(Math.random() * (screen.height - document.querySelector('button').offsetHeight) + 1) + 'px'">Přejít na nákup Kauri</button>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
-    <script>
-    VANTA.DOTS({
-      el: "html",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0x646194,
-      color2: 0x646194,
-      backgroundColor: 0x090380
-    })
-    </script>
+</div>
+
+<script src="brain.js"></script>
+
 </body>
 </html>
